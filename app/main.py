@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Configuracion de la pagina principal
-st.set_page_config(page_title="Prediccion de Diabetes", layout="centered")
+st.set_page_config(page_title="Predicción de Diabetes", layout="centered")
 
 # Direccion de la API externa
 API_URL = "https://diabetes-fast-api-q5dk.onrender.com/"
