@@ -23,9 +23,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Deploy to Streamlit Cloud
-      uses: streamlit/deploy-action@v1
+      uses: streamlit/streamlit-app-action@v0.0.3
       with:
         account: "dmaradiaga"
-        app-name: "diabetes-app"
-        token: ${{ secrets.STREAMLIT_TOKEN }}
-        api-url: "https://api.streamlit.io"
+        app-name: "app-diabetes-app-mkfputnqjtewk9gyjh3hye"
