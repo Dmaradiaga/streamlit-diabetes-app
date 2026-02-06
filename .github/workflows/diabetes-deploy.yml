@@ -22,8 +22,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Deploy to Streamlit Cloud
+    - name: Validate Streamlit App (Smoke Test)
       uses: streamlit/streamlit-app-action@v0.0.3
       with:
-        account: "dmaradiaga"
-        app-name: "app-diabetes-app-mkfputnqjtewk9gyjh3hye"
+        app-path: "app/main.py"
