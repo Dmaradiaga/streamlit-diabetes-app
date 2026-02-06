@@ -8,8 +8,8 @@ st.set_page_config(page_title="Prediccion de Diabetes", layout="centered")
 API_URL = "https://diabetes-fast-api-q5dk.onrender.com/"
 
 # Titulo y descripcion del programa
-st.title("Asistente de Prediccion de Diabetes")
-st.write("Esta aplicacion utiliza un modelo de inteligencia artificial para ayudar a predecir la posibilidad de tener diabetes basandose en datos de salud.")
+st.title("Asistente de Predicción de Diabetes")
+st.write("Esta aplicación utiliza un modelo de inteligencia artificial para ayudar a predecir la posibilidad de tener diabetes basándose en datos de salud.")
 
 # Funcion para revisar si la API esta funcionando y obtener la exactitud
 def obtener_info_sistema():
@@ -36,9 +36,9 @@ def obtener_info_sistema():
 estado_api, exactitud = obtener_info_sistema()
 
 if estado_api:
-    st.success(f"Conexion establecida. Exactitud del modelo: {exactitud}")
+    st.success(f"Conexión establecida. Exactitud del modelo: {exactitud}")
 else:
-    st.error("No se pudo conectar con el sistema de prediccion. Por favor, intente mas tarde.")
+    st.error("No se pudo conectar con el sistema de predicción. Por favor, intente más tarde.")
 
 # Formulario para ingresar los datos del paciente
 st.subheader("Datos del Paciente")
@@ -108,4 +108,4 @@ if boton_predecir:
         except Exception as error:
             st.error(f"Error al intentar comunicarse con el sistema: {str(error)}")
 
-st.info("Nota: Esta herramienta es informativa y no sustituye un diagnostico medico profesional.")
+st.info("Nota: Esta herramienta es informativa y no sustituye un diagnóstico médico profesional.")
