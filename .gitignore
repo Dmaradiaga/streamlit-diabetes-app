@@ -1,0 +1,26 @@
+# Entornos virtuales
+my-env/
+.venv/
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/
+static/
+
+# Sistema y IDEs
+.DS_Store
+.vscode/
+.idea/
